@@ -1,0 +1,31 @@
+<Project ToolsVersion="4.0" DefaultTargets="Deploy" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Classic_Chest_Open</Name>
+    <ProjectGuid>f5076217-1dd5-4223-8cf1-75a6f8a6d748</ProjectGuid>
+    <AssemblyName>Classic_Chest_Open</AssemblyName>
+    <RootNamespace>Classic_Chest_Open</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="ChestOpen.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Classic_Chest_Open.toc">
+      <SubType>TableOfContents</SubType>
+    </Content>
+    <Content Include="ZeldaChestOpen.mp3" />
+  </ItemGroup>
+  <Import Project="$(DevEnvDir)\Extensions\Tools\MSBuild\AddonStudio\Wow\3.0\WowAddonStudio.targets" />
+  <!--
+  To modify your build process, add your task inside one of the targets below and uncomment it.
+  <Target Name="BeforeClean"></Target>
+  <Target Name="AfterClean"></Target>
+  <Target Name="BeforeRebuild"></Target>
+  <Target Name="AfterRebuild"></Target>
+  <Target Name="BeforeDeploy"></Target>
+  <Target Name="AfterDeploy"></Target>
+  -->
+</Project>

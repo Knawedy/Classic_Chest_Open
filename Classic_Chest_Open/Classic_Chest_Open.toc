@@ -1,0 +1,6 @@
+## Interface: 90005
+## Title: Classic Chest Open
+## Author: Knawedy - WildGrowth
+## Version: 1.0
+ChestOpen.lua
+ZeldaChestOpen.mp3
